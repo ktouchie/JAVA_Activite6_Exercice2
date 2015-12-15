@@ -1,30 +1,21 @@
 import java.util.*;
-class Exercice1 {
+class Exercice2 {
 
 	public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);
         
         System.out.println("Enter a value for X:");
-        String x = sc.nextLine();
+        int x = sc.nextInt();
         
         System.out.println("Enter a value for Y:");
-        String y = sc.nextLine();
+        int y = sc.nextInt();
         
-        System.out.println("X: " + x);
-        System.out.println("Y: " + y);
-        
-        swap(x,y);
+        big(x,y);
         
 	}
 
-    public static void swap(String A, String B) {
-        String x = A;
-        A = B;
-        B = x;
-        
-        System.out.println("SWAP!");
-        System.out.println("X: " + A);
-        System.out.println("Y: " + B);
+    public static void big(String A, String B) {
+        (A>=B) ? System.out.println(A + " is the bigger number") : System.out.println(B + "is the bigger number");
     }
 }
