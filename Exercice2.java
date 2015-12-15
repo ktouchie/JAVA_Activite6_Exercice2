@@ -15,7 +15,7 @@ class Exercice2 {
         
 	}
 
-    public static void big(String A, String B) {
+    public static void big(int A, int B) {
         int C = (A>=B) ? A : B;
         System.out.println(C + " is the bigger number.");
     }
